@@ -29,26 +29,18 @@ li{
 .hamburger__icon{
     align-content: center;
 }
-h1{
-    color: var(--white);
-    font-size: 2em;
-}
 img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 figure{
-    display: flex;
-    flex-direction: column;
-    margin: -1em;
-    z-index: -2;
+    margin: 0;
 }
 figcaption{
     font-size: 1.2em;
     text-align: center;
-    padding-left:2em ;
-    padding-right: 2em;
+    padding: 0.5em;
 }
 a{
 text-decoration: none;
@@ -66,25 +58,67 @@ ul{
     flex-direction: column;
     justify-content: center;
 }
+menu{
+    margin: 0;
+    padding: 0;
+}
 .menu li{
     padding: 0.2em;
 }
-.menu{
+.footer__menu{
     background-color: var(--dark2);
     padding: 1em;
 }
+.footer__menu ul li{
+    margin-bottom: 0.5em;
+    }
+.footer__menu ul li a:hover{
+color: var(--primary);
+}
 .body__akce{
-    margin: 1em;
-    padding-bottom: 1em;
+    padding: 0.5em;
 }
 .body__akce > a{
    text-align: center;
 }
-.socials{
+.footer__socials{
+display: flex;
+flex-direction: row;
+margin: 0;
+justify-content: space-around;
+}
+
+.socials--git, .socials--tiktok, .socials--insta{
+    opacity: 0.8;
+transition: opacity 0.3s ease-out;
 }
 .socials--insta{
-    background-image: url(/images/instagram.png);
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+content: url(images/instagram.png);
+max-width: 50px;
+height: auto;
+
 }
+.socials--insta:hover{
+content: url(/images/instagram_hover.png);
+opacity: 1;
+
+}
+
+.socials--git{
+    content: url(images/github.png);
+    max-width: 50px;
+    height: auto;
+    }
+    .socials--git:hover{
+        content: url(/images/github_hover.png);
+        opacity: 1;
+        }
+.socials--tiktok{
+    content: url(images/tiktok.png);
+        max-width: 50px;
+height: auto;
+    }
+    .socials--tiktok:hover{
+        content: url(/images/tiktok_hover.png);
+        opacity: 1;
+        }
